@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-blue: #0b153c;
+	--primary-cyan: #17c2ec;
+	--priamry-grey: #263238;
+	--primary-white: #fff;
+	--secondary-white: rgba(255, 255, 255, 50);
+	--primary-white: #000;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
