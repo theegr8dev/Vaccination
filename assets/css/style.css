@@ -19,3 +19,219 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+/************* Utilites ****************/
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.container {
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+}
+.primary--btn,
+.secondary--btn {
+	color: #fff;
+	border-radius: 10px;
+}
+.primary--btn {
+	background-color: var(--primary-cyan);
+}
+.secondary--btn {
+	border: 1px solid var(--primary-cyan);
+	background-color: rgba(196, 196, 196, 0.2);
+}
+/************ Utilites Ended *********/
+/************* Header ****************/
+header {
+	background: url('../images/why-bg.png') var(--primary-blue);
+	background-size: cover;
+	/* height: 100vh; */
+}
+nav,
+.nav--container,
+.nav--list,
+.hero--content,
+.hero--content__btns,
+.specialist,
+.specialist p,
+.specialist,
+.appointments,
+.appointment,
+.schedule {
+	display: flex;
+	align-items: center;
+}
+nav {
+	padding-block: 2rem;
+}
+.nav--logo {
+	width: 20%;
+	margin-right: auto;
+}
+.nav--logo img {
+	width: 100%;
+}
+.nav--container {
+	width: 65%;
+	justify-content: space-between;
+}
+.nav--list {
+	gap: 2rem;
+}
+.nav--link {
+	font-size: 2.4rem;
+	color: var(--secondary-white);
+}
+.nav--btn {
+	color: var(--primary-cyan);
+	background-color: rgba(196, 196, 196, 0.2);
+	padding: 1rem 1.5rem;
+	font-size: 2.4rem;
+	border-radius: 10px;
+}
+.heros {
+	padding-block-start: 5rem;
+}
+.hero {
+	display: flex;
+}
+
+.hero--content {
+	flex-direction: column;
+	align-items: unset;
+	gap: 3rem;
+}
+.hero--content span {
+	color: var(--primary-cyan);
+}
+.hero--content__title {
+	font-size: 2.4rem;
+}
+.hero--content h1 {
+	color: #fff;
+	font-size: 4.8rem;
+	width: 80%;
+}
+.hero--content p {
+	font-size: 2.4rem;
+	color: #ffffff;
+	opacity: 70%;
+	width: 80%;
+}
+.hero--content__btns {
+	gap: 2rem;
+}
+.hero--content__btn {
+	font-size: 2.4rem;
+	padding: 1.2rem 2rem;
+}
+.hero--right {
+	width: 65%;
+	/* border: 1px solid red; */
+}
+.hero--img {
+	width: 100%;
+	background-color: var(--primary-cyan);
+	border-radius: 35px;
+	margin-inline: -5rem;
+	z-index: 0;
+	position: relative;
+}
+
+.hero--img::after,
+.hero--img::before {
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 20px;
+}
+.hero--img::after {
+	content: url('../images/coronavirus.png');
+	right: 0;
+	margin-right: -5rem;
+}
+.hero--img::before {
+	content: url('../images/doctor.png');
+	margin-left: -5rem;
+}
+.hero--img img {
+	width: 100%;
+	display: block;
+}
+.specialist {
+	width: max-content;
+	padding: 1rem;
+	margin-left: -5rem;
+	margin-top: -5rem;
+	border-radius: 10px;
+	align-items: unset;
+	gap: 2rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	position: relative;
+	z-index: 1;
+}
+.specialist span img:not(:first-of-type) {
+	display: inline-block;
+	margin-left: -1rem;
+}
+.specialist p {
+	font-weight: bold;
+	align-items: unset;
+	flex-direction: column;
+	font-size: 2.4rem;
+	color: #fff;
+}
+.specialist p span {
+	color: var(--primary-cyan);
+}
+.hero--appointment {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+.hero--appointment .schedule {
+	gap: 2rem;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+}
+.schedule p {
+	color: #fff;
+}
+.appointments {
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 2rem 2rem;
+}
+.appointment {
+	gap: 2rem;
+}
+.hero--appointment svg {
+	width: 5rem;
+	height: 5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.appointment span {
+	color: rgba(255, 255, 255, 0.3);
+}
+.appointment p {
+	color: #fff;
+}
+.appointment--btn {
+	padding: 1.5rem 3rem;
+	font-size: 2.4rem;
+}
+/************ Header Ended *********/
