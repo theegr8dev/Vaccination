@@ -11,6 +11,8 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- IconifyIcon  Js -->
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 		<!-- Custom css -->
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
@@ -19,7 +21,12 @@
 			<div class="container">
 				<nav>
 					<div class="nav--logo">
-						<img src="assets/images/logo.png" alt="logo" />
+						<img src="assets/images/logo.png" class="logo" alt="logo" />
+						<img
+							src="assets/images/toggle.png"
+							class="toggle"
+							alt="toggle"
+						/>
 					</div>
 					<div class="nav--container">
 						<ul class="nav--list">
@@ -138,7 +145,280 @@
 				</section>
 			</div>
 		</header>
-		<main></main>
+		<main>
+			<section class="sponsors" id="sponsors">
+				<div class="container">
+					<div class="sponsor">
+						<img src="assets/images/Moderna.png" alt="Moderna" />
+						<img src="assets/images/Pfizer.png" alt="Pfizer" />
+						<img src="assets/images/astraZeneca.png" alt="astraZeneca" />
+						<img src="assets/images/sinovac.png" alt="sinovac" />
+					</div>
+				</div>
+			</section>
+			<section class="result" id="result">
+				<div class="container">
+					<div class="result--content">
+						<span>Check your COVID-19 result on our Database</span>
+						<form>
+							<input type="text" name="name" placeholder="Name" />
+							<input type="number" placeholder="NIK Number" />
+							<button class="secondary--btn result--btn">Check</button>
+						</form>
+						<p>
+							Need a certificate for your COVID-19 result?
+							<a href="#"> Please click here </a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="why" id="why">
+				<div class="container">
+					<div class="why--header">
+						<h2>Why get vaccinated today?</h2>
+						<p>
+							Magna adipiscing at elit at ornare lectus nibh lorem. Ac,
+							sed ac lorem pellentesque vestibulum risus matti. In
+							molestie condimentum malesuada non.
+						</p>
+					</div>
+					<div class="whys">
+						<div class="why--content">
+							<svg>
+								<use xlink:href="assets/images/sprite.svg#shield"></use>
+							</svg>
+							<p>Protects your immune system against viruses</p>
+							<span
+								>Velit ut consectetur mauris, orci amet, faucibus. Sit
+								turpis fringilla ipsum pretium, dictum. Dolor eget vel
+								nulla lorem ac.</span
+							>
+							<a href="#"> Read More &rarr;</a>
+						</div>
+						<div class="why--content">
+							<svg>
+								<use xlink:href="assets/images/sprite.svg#users"></use>
+							</svg>
+							<p>Minimize the spread of the Virus</p>
+
+							<a href="#"> Read More &rarr;</a>
+						</div>
+						<div class="why--content">
+							<svg>
+								<use
+									xlink:href="assets/images/sprite.svg#thermometer"
+								></use>
+							</svg>
+							<p>Protect yourself</p>
+
+							<a href="#"> Read More &rarr;</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-vaccine" id="get-vaccine">
+				<div class="container">
+					<h2>Get your vaccine registration today</h2>
+					<div class="vaccine--details">
+						<div class="vaccine--left">
+							<form>
+								<div class="form--group">
+									<label for="full-name"
+										>Patient’s Full Name Full name</label
+									>
+									<input
+										type="text"
+										name="full-name"
+										id="full-name"
+										placeholder="Full name"
+									/>
+								</div>
+								<div class="form--group">
+									<label for="tel-phone">Mobile Number</label>
+									<span
+										>Notifications for appointment and reminders will
+										be sent to this provided number</span
+									>
+									<div class="form--number">
+										<div class="country--options">
+											<span
+												class="iconify"
+												data-icon="flag:gb-4x3"
+											></span>
+											&darr;
+										</div>
+										<input
+											type="tel"
+											name="tel-phone"
+											id="tel-phone"
+											placeholder="Phone number"
+										/>
+										<button class="primary--btn form--number__btn">
+											Verify
+										</button>
+									</div>
+								</div>
+								<button class="primary--btn form--btn">Submit</button>
+							</form>
+							<span>
+								<a href="#">Already registered?</a>
+								<a href="#">Check status</a>
+							</span>
+						</div>
+						<div class="vaccine--right">
+							<img src="assets/images/vacine.png" alt="vacine" />
+							<h3>COVID-19 Vaccine</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="symptoms" id="symptoms">
+				<div class="container symptom--container">
+					<div class="symptom--heading">
+						<span>COVID-19 Prevention</span>
+						<h2>COVID-19 Sysmtoms</h2>
+						<p>
+							Adipiscing nec etiam tortor elit quisque. Arcu aliquet
+							convallis aenean eu velit. Mi vestibulum, ullamcorper
+							venenatis imperdiet augue arcu donec neque.
+						</p>
+					</div>
+
+					.
+					<div class="symptom--content">
+						<ul class="symptom--list">
+							<li class="symptom">High Fever</li>
+							<li class="symptom">Loss sense of smell</li>
+							<li class="symptom">Dry cough</li>
+							<li class="symptom">Loss sense of taste</li>
+							<li class="symptom">Difficulty Breathing</li>
+							<li class="symptom">Sore Throat</li>
+						</ul>
+						<div class="symptom--img">
+							<img
+								src="assets/images/sympyoms.png"
+								alt="person with symptoms"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="feedback" id="feedback">
+				<div class="container feedback--container">
+					<div class="feedback--heading">
+						<span>FEEDBACK</span>
+						<h2>What our Patients Think</h2>
+						<p>
+							Adipiscing nec etiam tortor elit quisque. Arcu aliquet
+							convallis aenean eu velit. Mi vestibulum, ullamcorper
+							venenatis imperdiet augue arcu donec neque.
+						</p>
+					</div>
+					<div class="feedbacks">
+						<article class="feedback--card">
+							<div class="feedback--details">
+								<img
+									src="assets/images/feedback-1.png"
+									alt="feedback-person"
+								/>
+								<div>
+									<p class="feedback--name">Oyindamola Maja</p>
+									<span class="feedback--address">Badagry, Lagos</span>
+								</div>
+							</div>
+							<p class="feedback--content">
+								“Been stressing about a close centre to get the covid-19
+								vaccine, until i tried Vaccination.ng”
+							</p>
+						</article>
+						<article class="feedback--card">
+							<div class="feedback--details">
+								<img
+									src="assets/images/feedback-2.png"
+									alt="feedback-person"
+								/>
+								<div>
+									<p class="feedback--name">Okeowo Lekan</p>
+									<span class="feedback--address">Ikeja, Lagos</span>
+								</div>
+							</div>
+							<p class="feedback--content">
+								“Got my vaccine very close to my house. Was very easy
+								scheduling an appointment.”
+							</p>
+						</article>
+						<article class="feedback--card">
+							<div class="feedback--details">
+								<img
+									src="assets/images/feedback-3.png"
+									alt="feedback-person"
+								/>
+								<div>
+									<p class="feedback--name">Kafaru Temitope</p>
+									<span class="feedback--address"
+										>Obanikoro, Lagos</span
+									>
+								</div>
+							</div>
+							<p class="feedback--content">
+								“Been stressing about a close centre to get the covid-19
+								vaccine, until i tried Vaccination.ng”
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container footer--container">
+				<img src="assets/images/logo.png" alt="logo" />
+				<ul class="nav--list">
+					<li class="nav--item">
+						<a href="#" class="nav--link">Home</a>
+					</li>
+					<li class="nav--item">
+						<a href="#" class="nav--link">Services</a>
+					</li>
+					<li class="nav--item">
+						<a href="#" class="nav--link">Schedule</a>
+					</li>
+					<li class="nav--item">
+						<a href="#" class="nav--link">Contact us</a>
+					</li>
+				</ul>
+				<div class="icons">
+					<svg>
+						<use xlink:href="assets/images/sprite.svg#youtube"></use>
+					</svg>
+					<svg>
+						<use xlink:href="assets/images/sprite.svg#instagram"></use>
+					</svg>
+					<svg>
+						<use xlink:href="assets/images/sprite.svg#twitter"></use>
+					</svg>
+					<svg>
+						<use xlink:href="assets/images/sprite.svg#facebook"></use>
+					</svg>
+				</div>
+			</div>
+			<div class="cta">
+				<h2>Get a quote</h2>
+				<p>Please do enter your email address below</p>
+				<div class="direct-message">
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="lenus.ng@gmail.com"
+					/>
+					<div class="dm--icon">
+						<svg>
+							<use xlink:href="assets/images/sprite.svg#dm"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script src="assets/js/script.js"></script>
 </html>
